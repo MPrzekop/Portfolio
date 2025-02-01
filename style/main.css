@@ -214,6 +214,13 @@ a:hover {
           box-shadow: none;
 }
 
+.cta-btn--resume.active {
+  color: #E72C3C;
+  text-decoration: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 @media (max-width: 37.5em) {
   .cta-btn--resume:hover {
     color: #ffffff;

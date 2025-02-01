@@ -1,0 +1,37 @@
+.containerTabbed {
+  width: 100%;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+@media (max-width: 75em) {
+  .containerTabbed {
+    max-width: 960px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .containerTabbed {
+    max-width: 720px;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 48em) {
+  .containerTabbed {
+    max-width: 720px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .containerTabbed {
+    max-width: 540px;
+    width: 100%;
+  }
+}

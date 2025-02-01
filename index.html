@@ -53,16 +53,12 @@ Have fun creating your portfolio on this template!!! -->
 
     <!-- link tags -->
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/tabContents.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script src="./javascript/scrollreveal.min.js"></script>
-    <script
-      defer
-      type="text/javascript"
-      src="./javascript/scrollveal.js"
-    ></script>
+  
 
     <!-- Remove Google Analytics once you have your portfolio website set-up -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -70,6 +66,8 @@ Have fun creating your portfolio on this template!!! -->
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"
     ></script>
+    
+
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -129,10 +127,22 @@ Have fun creating your portfolio on this template!!! -->
           </div>
         </div>
       </div>
+      <span class="about-wrapper__cta">
+        
+      </span>
+    
+    
+   
     </section>
     <!-- /END About Section -->
     <section id="projects">
-      <div class="container">
+      <a class="cta-btn cta-btn--resume tablinks" onclick="openTab(event, 'XR Games')" id="defaultOpen">XR Games</a>
+      <a class="cta-btn cta-btn--resume tablinks" onclick="openTab(event, 'Shaders')">Shaders</a>
+      <a class="cta-btn cta-btn--resume tablinks" onclick="openTab(event, 'Steam Games')">Steam Games</a>
+      <a class="cta-btn cta-btn--resume tablinks" onclick="openTab(event, 'Nintendo Switch Games')">Nintendo Switch Games</a>
+      <a class="cta-btn cta-btn--resume tablinks" onclick="openTab(event, 'Game Jams')">Game Jams</a>
+
+    <div class="containerTabbed" id="XR Games">
         <div class="project-wrapper">
           <h2 class="section-title dark-blue-text">XR Games</h2>
           <article class="row">
@@ -166,10 +176,10 @@ Have fun creating your portfolio on this template!!! -->
           </article>
         </div>
       </div>
-    </section>
+    
     <!--Projects Section-->
-    <section id="projects">
-      <div class="container">
+    
+      <div class="containerTabbed"  id="Shaders">
         <div class="project-wrapper">
           <h2 class="section-title dark-blue-text">Shaders</h2>
           <article class="row">
@@ -378,10 +388,10 @@ Have fun creating your portfolio on this template!!! -->
         
         </div>
       </div>
-    </section>
+   
     <!-- End Projects Section -->
-    <section id="projects">
-      <div class="container">
+    
+      <div class="containerTabbed" id="Steam Games">
         <div class="project-wrapper">
           <h2 class="section-title dark-blue-text">Steam games</h2>
           <article class="row">
@@ -452,9 +462,8 @@ Have fun creating your portfolio on this template!!! -->
           </article>
         </div>
       </div>
-    </section>
-    <section id="projects">
-      <div class="container">
+    
+      <div class="containerTabbed" id="Nintendo Switch Games">
         <div class="project-wrapper">
           <h2 class="section-title dark-blue-text">Nintendo Switch system games</h2>
           <article class="row">
@@ -553,10 +562,8 @@ Have fun creating your portfolio on this template!!! -->
        
         </div>
       </div>
-    </section>
-
-    <section id="projects">
-      <div class="container">
+  
+      <div class="containerTabbed" id="Game Jams">
         <div class="project-wrapper">
           <h2 class="section-title dark-blue-text">Game Jams</h2>
           <article class="row">
@@ -712,6 +719,8 @@ Have fun creating your portfolio on this template!!! -->
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
     <script src="./javascript/vanilla-tilt.min.js"></script>
+    <script src="./javascript/tab.js"></script>
+    <script>document.getElementById("defaultOpen").click();</script>
     <script type="text/javascript" src="./javascript/valtilt.js"></script>
   </body>
 </html>
